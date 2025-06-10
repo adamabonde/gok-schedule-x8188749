@@ -92,11 +92,33 @@
         }
         /* Responsive design */
         @media (max-width: 768px) {
-            body { margin: 10px; }
+            body { margin: 0; padding: 0; }
+            .container { margin: 0; border-radius: 0; }
             .header { padding: 15px; }
-            .table-container { padding: 10px; }
-            table { font-size: 10px; }
-            th, td { padding: 2px 4px; }
+            .table-container { 
+                padding: 0; 
+                margin: 0;
+                border: none;
+                max-height: 90vh;
+            }
+            table { 
+                font-size: 10px; 
+                margin: 0;
+                border-collapse: collapse;
+            }
+            th, td { 
+                padding: 2px 4px; 
+                border: 1px solid #ddd;
+                margin: 0;
+            }
+            .row-header {
+                min-width: 120px;
+                border-right: 1px solid #ddd !important;
+            }
+            .corner-cell {
+                border-right: 1px solid #ddd !important;
+                border-bottom: 1px solid #ddd !important;
+            }
         }
     </style>
 </head>
@@ -112,7 +134,7 @@
             </table>
         </div>
         <div class="last-updated">
-            Last updated: 2025-06-10 13:58:34
+            Last updated: 2025-06-10 14:03:14
         </div>
     </div>
 </body>
